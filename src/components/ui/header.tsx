@@ -1,18 +1,6 @@
-import {
-  AlignLeftIcon,
-  HomeIcon,
-  PackageSearchIcon,
-  PercentIcon,
-  ShoppingBagIcon,
-} from "lucide-react";
+import { AlignLeftIcon, ShoppingBagIcon } from "lucide-react";
 import { Card } from "./card";
-import {
-  Sheet,
-  SheetClose,
-  SheetContent,
-  SheetHeader,
-  SheetTrigger,
-} from "./sheet";
+import { Sheet, SheetContent, SheetHeader, SheetTrigger } from "./sheet";
 import { Button } from "./button";
 
 export default function Header() {
@@ -32,54 +20,8 @@ export default function Header() {
 
           <SheetContent side="left">
             <SheetHeader className="text-left text-lg font-semibold">
-              Menu
+              Acompanhe seu pedido:
             </SheetHeader>
-
-            <div className="mt-2 flex flex-col gap-2">
-              <SheetClose asChild>
-                <a href="/">
-                  <Button
-                    variant="outline"
-                    className="w-full justify-start gap-2"
-                  >
-                    <HomeIcon size={16} /> Home
-                  </Button>
-                </a>
-              </SheetClose>
-
-              <SheetClose asChild>
-                <a href="/offers">
-                  <Button
-                    variant="outline"
-                    className="w-full justify-start gap-2"
-                  >
-                    <PercentIcon size={16} /> Offers
-                  </Button>
-                </a>
-              </SheetClose>
-
-              <SheetClose asChild>
-                <a href={"/catalog"}>
-                  <Button
-                    variant="outline"
-                    className="w-full justify-start gap-2"
-                  >
-                    Catalog
-                  </Button>
-                </a>
-              </SheetClose>
-
-              <SheetClose asChild>
-                <a href="/orders">
-                  <Button
-                    variant="outline"
-                    className="w-full justify-start gap-2"
-                  >
-                    <PackageSearchIcon size={16} /> Orders
-                  </Button>
-                </a>
-              </SheetClose>
-            </div>
           </SheetContent>
         </Sheet>
 
@@ -101,7 +43,7 @@ export default function Header() {
             >
               {true && (
                 <span className="absolute right-[calc(-1.25rem/2)] top-[calc(-1.25rem/2)] flex h-6 w-6 items-center justify-center rounded-lg bg-orange-500 text-sm text-white font-bold">
-                  10
+                  0
                 </span>
               )}
               <ShoppingBagIcon color="#FFFFFF" />
