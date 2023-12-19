@@ -1,11 +1,11 @@
 import Header from "./components/ui/header";
-import Home from "./pages/home";
+import Routes from "./routes/routes";
 
 function App() {
   return (
     <div className="font-Sen">
       <Header />
-      <Home />
+      <Routes />
     </div>
   );
 }
