@@ -3,7 +3,7 @@ import { Button } from "./button";
 
 export default function ProductCard() {
   return (
-    <a href={`/product/slug`}>
+    <a href={`/detalhes/torre-de-batatas`}>
       <div className="flex flex-col gap-2">
         <div className="relative flex h-[170px] lg:h-[300px] w-full items-center justify-center rounded-lg bg-accent">
           <img
