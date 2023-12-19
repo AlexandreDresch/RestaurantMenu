@@ -5,7 +5,7 @@ import { Button } from "./button";
 
 export default function Header() {
   return (
-    <Card className="p-4 flex font-Sen justify-between">
+    <Card className="p-4 flex font-Sen justify-between sticky top-0 left-0 z-10">
       <div className="flex gap-2">
         <Sheet>
           <SheetTrigger>
