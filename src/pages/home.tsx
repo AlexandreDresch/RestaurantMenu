@@ -1,25 +1,22 @@
 import HorizontalList from "@/components/ui/horizontal-list";
-import { Input } from "@/components/ui/input";
 import Link from "@/components/ui/link";
 import SectionTitle from "@/components/ui/section-title";
 
 export default function Home() {
   return (
-    <div className="flex flex-col p-4 gap-4">
-      <Input placeholder="Procure por um prato" />
-
-      <div className="flex flex-col gap-1">
-        <div className="flex justify-between">
+    <div className="flex flex-col p-4 gap-5">
+      <div className="flex flex-col gap-1 mt-5">
+        <div className="flex justify-between mb-2">
           <SectionTitle>Pratos</SectionTitle>
-          <Link target="/pratos" />
+          <Link target="categoria/pratos" />
         </div>
         <HorizontalList />
       </div>
       
       <div className="flex flex-col gap-1">
-        <div className="flex justify-between">
+        <div className="flex justify-between mb-2">
           <SectionTitle>Bebidas</SectionTitle>
-          <Link target="/bebidas" />
+          <Link target="categoria/bebidas" />
         </div>
         <HorizontalList />
       </div>
